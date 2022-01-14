@@ -3,31 +3,35 @@
     <head>
         <title>The Nico Times</title>
         <Style>
-            body {
-                height: 1000vh;
-                margin: 50px;
-            }
-            span {
-                background-color: yellowgreen;
-                padding: 5px;
-                border-radius: 10px;
-            }
-            form {
-                background-color: salmon;
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-            }
-            form:hover input:focus {
-                background-color: sienna;
-            }
+           body {
+               display: flex;
+               height: 100vh;
+               align-items: center;
+               justify-content: center;
+               flex-direction: column;
+           }
+           div {
+               background-color: teal;
+               width: 200px;
+               height: 200px;
+           }
+           @media screen and (min-width: 601px) and (max-width: 120px) {
+               div {
+                   background-color: wheat;
+               }
+           }
+           span {
+               font-size: 36px;
+           }
+           @media screen and (orientation: landscape) {
+               span {
+                   display : none;
+               }
+           }
         </Style>
     </head>
     <body>
-       <form>
-           <input type="text" name="" id="" />
-           <input type="text" name="" id="" />
-           <input type="text" name="" id="" />
-       </form>
+       <div></div>
+       <span>Please flip your phone :(</span>
     </body>
 </html> 
